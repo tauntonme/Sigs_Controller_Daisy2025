@@ -1,2 +1,0 @@
-../Core/Src/SystemSetup.cpp:21:16:const char* get_version()	1
-../Core/Src/SystemSetup.cpp:32:17:void Signal_sys_Setup()	2

@@ -1,5 +1,0 @@
-../Core/Inc/MechanicalLock.hpp:20:15:const char* MechLock::txt() const	1
-../Core/Src/MechaniclaLock.cpp:11:1:MechLock::MechLock(const char*, INPIN, POLARITY, INPIN, POLARITY, OUTPIN, POLARITY)	2
-../Core/Src/MechaniclaLock.cpp:22:6:bool MechLock::is_locked() const	3
-../Core/Src/MechaniclaLock.cpp:27:6:bool MechLock::is_unlocked() const	3
-../Core/Src/MechaniclaLock.cpp:32:8:char* MechLock::report(char*) const	3
