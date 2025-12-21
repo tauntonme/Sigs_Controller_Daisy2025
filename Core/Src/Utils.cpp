@@ -126,7 +126,8 @@ extern	bool	set_output_bit	(OUTPIN which_output, bool hiorlo)	;
 Serial				ctrl(huart1);
 Serial				pc(huart2);		//, * Com_ptrs[];
 i2eeprom_settings	my_settings	(settings_data, hi2c1)	;	//	Create one i2eeprom_settings object named 'j_settings'
-CommandLineHandler	command_line_handler	(pc_command_list, &pc);	//	Nice and clean
+//CommandLineHandler	command_line_handler	(pc_command_list, &pc);	//	Nice and clean
+CommandLineHandler	command_line_handler	(pc_command_list);	//	Nice and clean
 
 
 extern	void	CAN_status_report	()	;	//	6th March 2024
