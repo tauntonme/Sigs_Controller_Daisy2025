@@ -1,0 +1,10 @@
+../Core/Src/SingleOutput.cpp:21:1:SingleOutput::SingleOutput(const char*, OUTPIN)	24	static
+../Core/Src/SingleOutput.cpp:26:1:SingleOutput::SingleOutput(const char*, OUTPIN, POLARITY)	24	static
+../Core/Src/SingleOutput.cpp:36:14:const char* SingleOutput::m_txt() const	16	static
+../Core/Src/SingleOutput.cpp:41:6:bool SingleOutput::set_pin(bool)	16	static
+../Core/Src/SingleOutput.cpp:47:6:bool SingleOutput::read() const	16	static
+../Core/Src/SingleOutput.cpp:52:8:OUTPIN SingleOutput::get_pin_num() const	16	static
+../Core/Src/SingleOutput.cpp:57:6:void SingleOutput::set_polarity(bool)	16	static
+../Core/Src/SingleOutput.cpp:72:6:bool SingleOutput::m_pin_use_checker()	96	static
+../Core/Src/SingleOutput.cpp:94:8:char* SingleOutput::report(char*) const	32	static
+../Core/Src/SingleOutput.cpp:100:6:void pin_lister()	120	static

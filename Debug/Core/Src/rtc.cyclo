@@ -1,0 +1,7 @@
+../Core/Src/rtc.cpp:22:8:char* get_date(char*)	5
+../Core/Src/rtc.cpp:44:9:int32_t get_date()	1
+../Core/Src/rtc.cpp:61:8:char* get_time(char*)	1
+../Core/Src/rtc.cpp:75:9:int32_t get_time()	1
+../Core/Src/rtc.cpp:90:6:bool set_time(parameters&)	8
+../Core/Src/rtc.cpp:128:6:bool set_date(parameters&)	9
+../Core/Src/rtc.cpp:172:6:void rtc_buggery()	1

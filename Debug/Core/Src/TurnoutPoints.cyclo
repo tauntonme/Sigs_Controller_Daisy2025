@@ -1,0 +1,15 @@
+../Core/Inc/TurnoutPoints.hpp:30:15:const char* Points::txt() const	1
+../Core/Inc/TurnoutPoints.hpp:51:8:void Points::read_update()	1
+../Core/Inc/TurnoutPoints.hpp:57:12:uint32_t Points::get_two_inbits() const	3
+../Core/Inc/TurnoutPoints.hpp:85:15:const char* DualPoints::txt() const	1
+../Core/Src/TurnoutPoints.cpp:12:6:void Points::set_to(int)	5
+../Core/Src/TurnoutPoints.cpp:40:6:bool Points::wrong() const	3
+../Core/Src/TurnoutPoints.cpp:47:6:bool Points::normal() const	4
+../Core/Src/TurnoutPoints.cpp:52:6:bool Points::reverse() const	4
+../Core/Src/TurnoutPoints.cpp:57:6:bool DualPoints::wrong() const	3
+../Core/Src/TurnoutPoints.cpp:62:6:bool DualPoints::normal() const	3
+../Core/Src/TurnoutPoints.cpp:67:6:bool DualPoints::reverse() const	3
+../Core/Src/TurnoutPoints.cpp:72:8:char* Points::report(char*) const	3
+../Core/Src/TurnoutPoints.cpp:84:8:char* DualPoints::report(char*) const	1
+../Core/Src/TurnoutPoints.cpp:93:6:void DualPoints::set_to(int)	1
+../Core/Src/TurnoutPoints.cpp:99:6:void DualPoints::read_update()	1

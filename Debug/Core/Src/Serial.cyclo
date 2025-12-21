@@ -1,0 +1,25 @@
+../Core/Src/Serial.cpp:37:6:void Serial::Constructor_Core()	4
+../Core/Src/Serial.cpp:53:1:Serial::Serial(UART_HandleTypeDef&)	5
+../Core/Src/Serial.cpp:61:1:Serial::Serial(UART_HandleTypeDef&, size_t)	5
+../Core/Src/Serial.cpp:71:6:bool Serial::start_rx()	2
+../Core/Src/Serial.cpp:79:6:void Serial::set_tx_busy(bool)	1
+../Core/Src/Serial.cpp:84:6:bool Serial::get_tx_busy()	1
+../Core/Src/Serial.cpp:93:6:void special_char_handler(char)	1
+../Core/Src/Serial.cpp:113:6:bool Serial::get(uint8_t&)	1
+../Core/Src/Serial.cpp:125:6:bool Serial::read(uint8_t*, size_t&)	5
+../Core/Src/Serial.cpp:150:8:char* Serial::test_for_rx_message()	14
+../Core/Src/Serial.cpp:213:6:void Serial::report_error()	2
+../Core/Src/Serial.cpp:225:6:bool Serial::test_error(SerialErrors) const	1
+../Core/Src/Serial.cpp:230:10:uint32_t Serial::clear_error(SerialErrors)	1
+../Core/Src/Serial.cpp:238:6:void Serial::set_error(SerialErrors)	1
+../Core/Src/Serial.cpp:256:6:bool Serial::write(const uint8_t*, int32_t)	5
+../Core/Src/Serial.cpp:300:6:bool Serial::write(const char*, int32_t)	1
+../Core/Src/Serial.cpp:305:6:bool Serial::tx_any_buffered()	10
+../Core/Src/Serial.cpp:333:6:void Serial::rx_intrpt_handler_core_DMA()	1
+../Core/Src/Serial.cpp:340:6:void HAL_UART_RxCpltCallback(UART_HandleTypeDef*)	3
+../Core/Src/Serial.cpp:354:6:void HAL_UART_TxCpltCallback(UART_HandleTypeDef*)	3
+../Core/Src/Serial.cpp:365:6:void HAL_UART_ErrorCallback(UART_HandleTypeDef*)	3
+../Core/Inc/Serial.hpp:48:2:CircularBuffer<T>::CircularBuffer(size_t) [with T = unsigned char]	4
+../Core/Inc/Serial.hpp:65:7:bool CircularBuffer<T>::get(T&) [with T = unsigned char]	2
+../Core/Inc/Serial.hpp:62:7:bool CircularBuffer<T>::empty() [with T = unsigned char]	3
+../Core/Inc/Serial.hpp:74:7:bool CircularBuffer<T>::put(T&) [with T = unsigned char]	2

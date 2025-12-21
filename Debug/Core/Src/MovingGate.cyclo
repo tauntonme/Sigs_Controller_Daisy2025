@@ -1,0 +1,7 @@
+../Core/Inc/MovingGate.hpp:16:15:const char* MovingGate::txt() const	1
+../Core/Src/MovingGate.cpp:11:1:MovingGate::MovingGate(const char*, INPIN, POLARITY, INPIN, POLARITY)	2
+../Core/Src/MovingGate.cpp:23:6:void MovingGate::read_update()	1
+../Core/Src/MovingGate.cpp:29:10:uint32_t MovingGate::get_two_inbits() const	3
+../Core/Src/MovingGate.cpp:37:6:bool MovingGate::is_open() const	3
+../Core/Src/MovingGate.cpp:42:6:bool MovingGate::is_closed() const	3
+../Core/Src/MovingGate.cpp:47:8:char* MovingGate::report(char*) const	3
