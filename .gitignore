@@ -1,6 +1,11 @@
 # Prerequisites
 *.d
 
+Drivers/
+Debug/
+Release/
+.settings
+
 # Compiled Object files
 *.slo
 *.lo
