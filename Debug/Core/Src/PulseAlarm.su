@@ -1,6 +1,0 @@
-../Core/Src/PulseAlarm.cpp:9:1:PulseAlarm::PulseAlarm(const char*, OUTPIN)	24	static
-../Core/Src/PulseAlarm.cpp:16:6:void PulseAlarm::read_update()	24	static
-../Core/Src/PulseAlarm.cpp:30:6:void PulseAlarm::mark_space(int, int)	24	static
-../Core/Src/PulseAlarm.cpp:35:6:void PulseAlarm::start_alarm()	16	static
-../Core/Src/PulseAlarm.cpp:41:6:void PulseAlarm::clr()	16	static
-../Core/Src/PulseAlarm.cpp:46:8:OUTPIN PulseAlarm::get_pin_num() const	16	static

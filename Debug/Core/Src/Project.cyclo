@@ -1,4 +1,0 @@
-../Core/Src/Project.cpp:52:6:bool pl_cmd(parameters&)	1
-../Core/Src/Project.cpp:58:6:bool sb_cmd(parameters&)	1
-../Core/Src/Project.cpp:69:9:bool vi_cmd(parameters&)	1
-../Core/Src/Project.cpp:80:6:bool ce_cmd(parameters&)	1

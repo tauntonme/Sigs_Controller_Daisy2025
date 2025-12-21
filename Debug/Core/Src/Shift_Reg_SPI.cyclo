@@ -1,8 +1,0 @@
-../Core/Src/Shift_Reg_SPI.cpp:39:6:bool get_outreg_1bit(OUTPIN)	1
-../Core/Src/Shift_Reg_SPI.cpp:45:6:void spi_cs_set()	1
-../Core/Src/Shift_Reg_SPI.cpp:49:6:void spi_cs_clr()	1
-../Core/Src/Shift_Reg_SPI.cpp:76:6:void start_spi_TxRx()	1
-../Core/Src/Shift_Reg_SPI.cpp:107:6:bool spi_inputs_updated()	5
-../Core/Src/Shift_Reg_SPI.cpp:143:6:bool set_output_bit(OUTPIN, bool)	4
-../Core/Src/Shift_Reg_SPI.cpp:180:6:bool get_input_bit_debounced(INPIN, uint32_t)	8
-../Core/Src/Shift_Reg_SPI.cpp:231:6:void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef*)	1
