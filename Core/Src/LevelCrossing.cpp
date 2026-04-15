@@ -14,6 +14,7 @@ extern	Serial pc;
 
 
 
+
 bool	ClassLevelCrossing::set	(uint32_t new_state)	{	//	new_state will be in range 0 to 3
 	if	(/*(new_state < 0) ||*/ (new_state > 3L))			//	can energise either, neither or both actuators
 		return	(false)	;

@@ -100,17 +100,20 @@ bool	set_time	(struct parameters & a)	{	//	returns false with bad input data, tr
 	}
 	for	(int i = 0; i < 3; i++)
 		time[i] = (uint8_t)a.flt[i];	//	two or three parameters found, convert to integer
-	if	((time[0] < 0) || (time[0] > 23))	{
+//	if	((time[0] < 0) || (time[0] > 23))	{
+	if	(time[0] > 23)	{
 		len = sprintf	(t, "Time set error - Hour %d not in range 0 - 23\r\n", time[0]);
 		COM_PORT.write(t, len);
 		errors++;
 	}
-	if	((time[1] < 0) || (time[1] > 59))	{
+//	if	((time[1] < 0) || (time[1] > 59))	{
+	if	(time[1] > 59)	{
 		len = sprintf	(t, "Time set error - Minute %d not in range 0 - 59\r\n", time[1]);
 		COM_PORT.write(t, len);
 		errors++;
 	}
-	if	((time[2] < 0) || (time[2] > 59))	{
+//	if	((time[2] < 0) || (time[2] > 59))	{
+	if	(time[2] > 59)	{
 		len = sprintf	(t, "Time set error - Seconds %d not in range 0 - 59\r\n", time[2]);
 		COM_PORT.write(t, len);
 		errors++;
@@ -138,7 +141,7 @@ bool	set_date	(struct parameters & a)	{	//	returns false with bad input data, tr
 	}
 	for	(int i = 0; i < 4; i++)
 		date[i] = (uint8_t)a.flt[i];	//	four parameters found, convert to integer
-	if	((date[0] < 0) || (date[0] > 99))	{
+	if	(date[0] > 99)	{
 		len = sprintf	(t, "Date set error - Year %d not in range 0 - 99\r\n", date[0]);
 		COM_PORT.write(t, len);
 		errors++;
@@ -148,12 +151,12 @@ bool	set_date	(struct parameters & a)	{	//	returns false with bad input data, tr
 		COM_PORT.write(t, len);
 		errors++;
 	}
-	if	((date[2] < 0) || (date[2] > 99))	{
+	if	(date[2] > 99)	{
 		len = sprintf	(t, "Date set error - Day %d not in range 1 - 7\r\n", date[2]);
 		COM_PORT.write(t, len);
 		errors++;
 	}
-	if	((date[3] < 0) || (date[3] > 99))	{
+	if	(date[3] > 99)	{
 		len = sprintf	(t, "Date set error - Date %d not in range 1 - 31\r\n", date[3]);
 		COM_PORT.write(t, len);
 		errors++;

@@ -57,7 +57,8 @@ bool	in_range	(T value, T position)	{
 	return	((value >= set_list[position].min) && (value <= set_list[position].max));
 }
 */
-const int		i2eeprom_settings::list_len	()const	{
+//const int		i2eeprom_settings::list_len	()const	{
+int		i2eeprom_settings::list_len	()const	{
 	int	i = 0;
 	while	(set_list[i].cmd_word)
 		i++;

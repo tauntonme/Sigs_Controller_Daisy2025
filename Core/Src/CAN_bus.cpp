@@ -121,7 +121,7 @@ bool	can_echo	()	{	//	Peripherals respond using this
 	if	(can_sema < 1)			//	Flag set in CAN Rx interrupt
 		return	(true);
 //	can_flag = false;	//	Have rec'd a message
-	can_sema--;
+	can_sema -= 1;
 #ifdef	TMP_REP_ENABLE
 	if	(CAN_RxHeader.RTR == CAN_RTR_DATA)	{
 		pc.write	("RTR_DATA in can_respond\r\n", 26);	//	Execute rx'd command
@@ -481,7 +481,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)	//	Yes this one
 {
 	cancount++;
 //	can_flag = true;
-	can_sema++;
+	can_sema += 1;
 	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &CAN_RxHeader, MyCAN_RxData);
 //	stdid[2] = RxHeader.StdId;
 }
@@ -490,7 +490,7 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)	//	Yes this one
 {
 	cancount++;
 //	can_flag = true;
-	can_sema++;
+	can_sema += 1;
 	HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO1, &CAN_RxHeader, MyCAN_RxData);
 //	stdid[2] = RxHeader.StdId;
 }

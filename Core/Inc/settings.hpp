@@ -37,7 +37,8 @@ class	i2eeprom_settings	{
 	bool	write_eeprom	(uint32_t address, const char *buffer, uint32_t size)	const	;
 	bool	fcwi_set_list	(const char * wrd, uint32_t & position)	;	//	Used in 'edit' and 'read1'
 	bool	find_word_in_string	(const char * s_str, const char * targ_wrd, uint32_t & posn)	;
-	const int		list_len	()const	;
+//	const int		list_len	()const	;
+	int		list_len	()const	;
   public:
 	i2eeprom_settings	(struct cli_menu_entry_set const * list
 			, I2C_HandleTypeDef &hi2cn)	//	User built table, see e.g. above
